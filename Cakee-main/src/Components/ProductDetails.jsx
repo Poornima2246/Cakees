@@ -22,7 +22,7 @@ function ProductDetails() {
 
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://cakees.onrender.com/api/dessert/${id}`, {
+        const response = await axios.get(`https://cakees-backend.onrender.com/api/dessert/${id}`, {
           signal: controller.signal,
         });
         if (response.data && typeof response.data === "object") {
