@@ -24,7 +24,7 @@ function Cakepro() {
     const fetchData = async () => {
       try {
         console.log('Fetching menu items...');
-        const response = await axios.get('https://cakees.onrender.com/api/dessert/list');
+        const response = await axios.get('https://cakees-backend.onrender.com/api/dessert/list');
         console.log('Response data:', response.data);
         if (Array.isArray(response.data.data)) {
           setCakes(response.data.data);
