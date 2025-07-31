@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Addpage() {
-  const url = "https://cakees.onrender.com";
+  const url = "https://cakees-backend.onrender.com";
   const [formData, setFormData] = useState({
     mainImage: null,
     addImage1: null,
